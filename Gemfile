@@ -47,6 +47,8 @@ group :development, :mysql do
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
+  gem 'rubocop-require_tools'
+  gem 'rubocop-rspec'
   gem "travis-lint"
 end
 
