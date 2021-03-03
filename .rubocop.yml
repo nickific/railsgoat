@@ -14,10 +14,18 @@ require:
 AllCops:
   DisabledByDefault: true
 
-################## Security #################################
-
 Security/Eval:
   Description: 'The use of eval represents a serious security risk.'
   Enabled: true
+Security/JSONLoad:
+  Enabled: true
+Security/MarshalLoad:
+  Enabled: true
+Security/Open:
+  Enabled: true
+Security/YAMLLoad:
+  Enabled: true
+
+
 
 
