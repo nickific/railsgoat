@@ -1,9 +1,23 @@
-inherit_gem:
-  rubocop-github:
-    - config/default.yml
-    - config/rails.yml
+#inherit_gem:
+#  rubocop-github:
+#    - config/default.yml
+#    - config/rails.yml
+
+#Rails/OutputSafety:
+#  Exclude:
+#    - 'app/controllers/password_resets_controller.rb'
+
+require:
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-performance
+AllCops:
+  DisabledByDefault: true
+
+################## Security #################################
+
+Security/Eval:
+  Description: 'The use of eval represents a serious security risk.'
+  Enabled: true
 
 
-Rails/OutputSafety:
-  Exclude:
-    - 'app/controllers/password_resets_controller.rb'
