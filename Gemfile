@@ -44,9 +44,9 @@ group :development, :mysql do
   gem "rack-livereload"
   gem "rb-fsevent"
   gem "rubocop-github"
-  gem 'rubocop',
-  gem 'rubocop-performance',
-  gem 'rubocop-rails',
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
   gem "travis-lint"
 end
 
